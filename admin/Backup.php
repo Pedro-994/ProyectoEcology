@@ -1,7 +1,7 @@
 <?php
 
 // Database configuration
-$host = "local";
+$host = "localhost";
 $username = "root";
 $password = "";
 $database_name = "ecologycomputerbase";

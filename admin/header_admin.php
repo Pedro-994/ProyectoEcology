@@ -39,12 +39,9 @@
                 <a class='nav-link' href='rentas.php'>Rentas</a>
               </li>
               <li class='nav-item'>
-                <a class='nav-link' href='#'>Administradores</a>
+                <a class='nav-link' href='Backup.php'>Backup base de datos</a>
               </li>
-              <li class='nav-item'>
-                <a class='nav-link' href='#'>Backup base de datos</a>
-              </li>
-              <a class='nav-link' href='logout.php'>Cerrar Sesion</a>
+              <a class='nav-link ' href='logout.php'>Cerrar Sesion</a>
             </ul>
           </div>'";
           }
