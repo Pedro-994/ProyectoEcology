@@ -4,8 +4,8 @@
 
 <body> 
 <?php
-          if(isset($_SESSION['nomadmin'])){
-            $a = $_SESSION['nomadmin'];
+          if(isset($_SESSION['correou'])){
+            $a = $_SESSION['correou'];
             echo "<br> <br>
                 <div class='container'><br>
                     <h1 class='mt-5 display-4 text-center'>Bienvenid@ $a</h1>

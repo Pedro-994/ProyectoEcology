@@ -12,10 +12,11 @@ $contrasenau=$_POST['contrasenau'];
 		$row=$resultado->fetch_assoc();
 		$id=$row['idu'];
 
-		if($filas>0){
+		if($filas){
+			$_SESSION['correou']=$correou;
 			echo "<script>
                 alert('Inicio Sesion Correctamente');
-                location= 'index.php?idu=$idu'
+                location= 'index.php'
 	</script>";
 }else{
     echo "<script>
