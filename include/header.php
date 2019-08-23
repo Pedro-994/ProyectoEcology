@@ -157,42 +157,9 @@
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav">
 						<li><a href="index.php">Inicio</a></li>	
-						<!-- Mega Menu -->
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle act" data-toggle="dropdown" >Productos <b class="caret"></b></a>
-							<ul class="dropdown-menu multi-column columns-3">
-								<div class="row">
-									<div class="col-sm-3">
-										<ul class="multi-column-dropdown">
-											<h6>Computadoras</h6>
-											<li><a href="products.php">HP</a></li>
-											<li><a href="products.php">DELL <span>Nuevo</span></a></li> 
-											<li><a href="products.php">LENOVO</a></li>
-											<li><a href="products.php">ACER<span>Nuevo</span></a></li>
-										</ul>
-									</div>
-									<div class="col-sm-3">
-										<ul class="multi-column-dropdown">
-											<h6>Accesorios</h6>
-											<li><a href="products1.php">Mouse</a></li>
-											<li><a href="products1.php">Teclados</a></li>
-											<li><a href="products1.php">Bocinas <span>Nuevo</span></a></li>
-											<li><a href="products1.php"><i>Mas</i></a></li>
-										</ul>
-									</div>
-									<div class="col-sm-4">
-										<div class="w3ls_products_pos">
-											<h4>30%<i>Descuento</i></h4>
-											<img src="IMG/ofer.jpg" alt=" " class="img-responsive" />
-										</div>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							</ul>
-						</li>
-						<li><a href="about.php">Sobre Nosotros</a></li> 
-						</li>  
-						<li><a href="mail.php">Contactanos</a></li>
+						<li><a href="productos.php">Productos</a></li> 
+						<li><a href="nosotros.php">Sobre Nosotros</a></li>  
+						<li><a href="contacto.php">Contactanos</a></li>
 					</ul>
 				</div>
 			</nav>

@@ -50,7 +50,7 @@
 			</div>
 		</div>
 		<div class="container">
-			<p>&copy; 2019 Ecology Computer | Diseñado por <a href="">Ecology Computer.</a></p>
+			<p>&copy; 2019 Ecology Computer | Diseñado por <a href="admin/index.php">Ecology Computer.</a></p>
 		</div>
 	</div>
 </div>

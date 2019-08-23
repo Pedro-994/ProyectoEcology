@@ -1,5 +1,8 @@
 <?php
   include('header_admin.php');
+  if(!isset($_SESSION['nomadmin'])){
+    echo "<script>window.open('index.php','_self')</script>";
+}
 ?>
 
 <body>

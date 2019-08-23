@@ -1,15 +1,7 @@
 <?php
+  session_start();
   include('database.php');
 ?>
-
-<?php 
-  if(!empty($user)){
-    echo" <br> Bienvenido ?>
-    <br>Has iniciado sesión correctamente
-    <a href='logout.php'>
-      Salir
-    </a>";
-  }?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,25 +24,32 @@
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="usuarios.php">Usuarios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Computadoras.php">Computadoras</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="rentas.php">Rentas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Administradores</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Backup base de datos</a>
-          </li>
-        </ul>
-      </div>
+
+        <?php
+          if(isset($_SESSION['nomadmin'])){
+            echo "<div class='collapse navbar-collapse' id='navbarNav'>
+            <ul class='navbar-nav'>
+              <li class='nav-item'>
+                <a class='nav-link' href='usuarios.php'>Usuarios</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link' href='Computadoras.php'>Computadoras</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link' href='rentas.php'>Rentas</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link' href='#'>Administradores</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link' href='#'>Backup base de datos</a>
+              </li>
+              <a class='nav-link' href='logout.php'>Cerrar Sesion</a>
+            </ul>
+          </div>'";
+          }
+        ?>
+
     </nav>
   </div>
 </body>

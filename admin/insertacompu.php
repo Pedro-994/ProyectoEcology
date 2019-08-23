@@ -75,7 +75,7 @@
 
         if($guardar_producto){
             echo "<script>alert('Producto insertado')</script>";
-            header("Location: Computadoras.php");
+            echo "<script>window.open('Computadoras.php','_self')</script>";
         }else{
             echo "<script>alert('No se pudo agregar producto')</script>";
         }
