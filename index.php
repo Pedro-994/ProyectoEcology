@@ -34,14 +34,14 @@
 <body>
     <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
    
-	<?php if(isset($_SESSION['correou'])): 
+	<?php if(isset($_SESSION['correou'])){ 
 		$a = $_SESSION['correou'];
 		echo "<br> <br>
 			<div class='container'><br>
 				<h1 class='mt-5 display-4 text-center'>Bienvenid@ $a</h1>
 			</div>";	
 	?>
-     <?php else: ?> 
+     <?php }else{ ?> 
 	<div class="modal fade" id="myModal88" tabindex="-1" role="dialog" aria-labelledby="myModal88"
 		aria-hidden="true">
 		<div class="modal-dialog modal-lg">
@@ -118,7 +118,7 @@
 			<div class="w3l_login">
 				<a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
             </div>
-            <?php endif; ?>
+	<?php } ?>
 			<div class="w3l_logo">
 				<h1><a href="index.php">Ecology Computer<span>El mejor alquiler en computadoras.</span></a></h1>
 			</div>

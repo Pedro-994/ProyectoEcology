@@ -11,13 +11,15 @@ $contrasenau=$_POST['contrasenau'];
 		$filas=mysqli_num_rows($resultado);
 		$row=$resultado->fetch_assoc();
 		$id=$row['idu'];
-
 		if($filas){
 			$_SESSION['correou']=$correou;
+			$a = $_SESSION['correou'];
+			echo"Bienvenido $a";
 			echo "<script>
                 alert('Inicio Sesion Correctamente');
                 location= 'index.php'
 	</script>";
+
 }else{
     echo "<script>
                 alert('La contraseña es Incorrecta');

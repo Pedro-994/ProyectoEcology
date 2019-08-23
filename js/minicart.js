@@ -1819,6 +1819,15 @@ Cart.prototype.total = function total(config) {
     return currency(result, config);
 };
 
+function total2(config){
+    var result = 0;
+
+    result += this.subtotal();
+    config = config || {};
+    config.currency = this.settings('currency_code');
+
+    return currency(result);
+}
 
 /**
  * Remove an item from the cart. This fires a "remove" event.
@@ -1903,7 +1912,7 @@ var defaults = module.exports = {
 
     parent: (typeof document !== 'undefined') ? document.body : null,
 
-    action: 'procederpago.php',
+    action: 'renta.php',
 
     target: '',
 
@@ -1914,13 +1923,13 @@ var defaults = module.exports = {
     styles: '',
 
     strings: {
-        button: 'Comprar mas',
+        button: 'Realizar Pedido',
         subtotal: 'Subtotal:',
         discount: 'Discount:',
         empty: 'Su cesta esta bacia'
     }
 
-};
+}; 
 
 
 /**
@@ -2418,7 +2427,7 @@ var currencies = {
 
 
 module.exports = function currency(amount, config) {
-    var code = config && config.currency || 'USD',
+    var code = config && config.currency || 'MXN',
         value = currencies[code],
         before = value.before || '',
         after = value.after || '',
